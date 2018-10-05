@@ -53,6 +53,12 @@ func FlushContext(rw io.ReadWriter, handle tpmutil.Handle) error {
 	return err
 }
 
+//DecodePublic decodes a serialized Public Key in TPM Wire Formatted bytes
+//to a Public structure.
+func DecodePublic(in *bytes.Buffer) (Public, error) {
+	return decodePublic(in)
+}
+
 func encodeTPMLPCRSelection(sel PCRSelection) ([]byte, error) {
 	if len(sel.PCRs) == 0 {
 		return tpmutil.Pack(uint32(0))
