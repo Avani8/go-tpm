@@ -10,3 +10,5 @@ The examples directory contains some simple examples: creating an AIK, clearing
 the TPM (using owner auth), and taking ownership of the TPM.
 
 Please note that this is not an official Google product.
+# g-tpm
+go-tpm
