@@ -12,3 +12,4 @@ the TPM (using owner auth), and taking ownership of the TPM.
 Please note that this is not an official Google product.
 # g-tpm
 go-tpm
+# go-tpm
